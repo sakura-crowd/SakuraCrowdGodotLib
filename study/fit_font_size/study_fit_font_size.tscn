@@ -1,0 +1,147 @@
+[gd_scene load_steps=3 format=3 uid="uid://daidcapc41ubp"]
+
+[ext_resource type="Script" path="res://study/fit_font_size/study_fit_font_size.gd" id="1_ikpk0"]
+
+[sub_resource type="Theme" id="Theme_foxud"]
+
+[node name="StudyFitFontSize" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ikpk0")
+
+[node name="ColorRectBG" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 959.0
+offset_bottom = 538.0
+color = Color(0.3525, 0.47, 0, 1)
+
+[node name="Piyo" type="Button" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 49.0
+offset_right = 160.0
+offset_bottom = 143.0
+text = "Button
+実行時テスト用"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 343.0
+offset_top = 154.0
+offset_right = 593.0
+offset_bottom = 305.0
+text = "Button2
+プラグインによる
+調整確認用"
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 399.0
+offset_right = 246.0
+offset_bottom = 500.0
+text = "Check Button
+複数行 OK"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="MenuButton" type="MenuButton" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 359.0
+offset_right = 608.0
+offset_bottom = 409.0
+selected = 0
+item_count = 2
+popup/item_0/text = "OptionButton 要素1"
+popup/item_1/text = "要素２"
+popup/item_1/id = 1
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 197.0
+offset_top = 54.0
+offset_right = 549.0
+offset_bottom = 138.0
+text = "LinkButton CompotaSoftPress"
+uri = "https://compota-soft.work/"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 158.0
+offset_right = 247.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 16
+text = "Label
+↓のPanel,ColorRectは
+  テキストがない
+　コントロールです"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 651.0
+offset_top = 274.0
+offset_right = 809.0
+offset_bottom = 339.0
+text = "LineEdit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 645.0
+offset_top = 48.0
+offset_right = 925.0
+offset_bottom = 218.0
+theme = SubResource("Theme_foxud")
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "RichTextlabel
+[url=https://compota-soft.work/]Compota-Soft-Press[/url]
+では、毎日、ウェブ・ゲーム制作の役立ちそうな記事を公開中！"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 352.0
+offset_right = 936.0
+offset_bottom = 513.0
+text = "TextEdit
+LineEdit は１行
+TextEdit は複数行
+かけます。"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 322.0
+offset_right = 177.0
+offset_bottom = 390.0
+
+[node name="LabelOnPanel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 142.0
+offset_bottom = 53.0
+text = "LabelOnPanel"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Panel"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 320.0
+offset_right = 309.0
+offset_bottom = 373.0
+
+[node name="Node2D" type="Node2D" parent="."]
