@@ -1,0 +1,6 @@
+[submodule "addons/godot-git-plugin"]
+	path = addons/godot-git-plugin
+	url = https://github.com/godotengine/godot-git-plugin.git
+[submodule "addons/Gut"]
+	path = addons/Gut
+	url = https://github.com/bitwes/Gut.git
