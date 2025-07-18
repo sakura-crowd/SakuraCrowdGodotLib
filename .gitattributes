@@ -1,17 +1,26 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
+# 全てのファイルのデフォルトの設定です。
+# text かどうかの判定を Git で自動的に行い、テキストと判定されれば 
+# core.autocrlf などに従い改行コードを自動的に変換します。
+# ただし、設定がこのあとにある場合は、そちらが優先されます。
 * text=auto
 
-# Explicitly declare text files you want to always be normalized and converted
-# to native line endings on checkout.
-*.cpp text
-*.c text
-*.h text
-*.gd text
-*.cs text
-
-# Declare files that will always have CRLF line endings on checkout.
-*.sln text eol=crlf
-
-# Denote all files that are truly binary and should not be modified.
-*.png binary
-*.jpg binary
+# 拡張子単位の属性の割り当てです。
+*.cfg -text
+*.dylib -text -diff
+*.exp -text -diff
+*.gd text eol=crlf
+*.gdextension -text -diff
+*.gitattributes text eol=crlf
+*.gitignore text eol=crlf
+*.godot -text
+*.import -text -diff
+*.lib -text -diff
+*.md text eol=crlf
+*.png -text -diff
+*.so -text -diff
+*.svg -text
+*.tmp -text -diff
+*.tres -text
+*.tscn -text
+*.ttf -text -diff
+*.txt text eol=crlf

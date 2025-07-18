@@ -1,5 +1,7 @@
-# Godot 4+ specific ignores
+# GodotEngine4 プロジェクトフォルダの .gitignore の例です。改行コードは CRLF を使用しています。
+*.TMP
 .godot/
-/android/
+build/
+output/
 addons/*
 !addons/my/
