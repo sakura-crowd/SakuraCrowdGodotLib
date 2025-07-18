@@ -3,5 +3,3 @@
 .godot/
 build/
 output/
-addons/*
-!addons/my/
